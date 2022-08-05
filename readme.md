@@ -4,5 +4,5 @@ Repositorio usado para realização dos trabalhos da disciplina de Organização
 
 Grupo 3:
 
-+ Joao Pedro Cosme
++ João Pedro Cosme
 + 
