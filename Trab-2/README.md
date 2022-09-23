@@ -54,11 +54,13 @@ Simulação de processador x86 com características variadas em diferentes tipos
   - Baixa responsividade a aumentos na cache.
 
 <!-- TODO: decidir se vamos usar quick-sort ou outro algoritmo para casos com bastante comparações -->
-### Alg3: Quick Sort (????) 
+### Alg3: Quick Sort 
 - *Características:*
-  - 
+  - Alta localidade espacial;
+  - Grande quantidade de acessos a memória.
 - *Resultados Esperados*:
-  - 
+  - Baixo 'miss-rate' devido a alta localidade;
+  - Pouco impacto referente ao aumento associativo.
 
 
 ---
