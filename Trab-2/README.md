@@ -5,7 +5,7 @@ Simulação de processador x86 com características variadas em diferentes tipos
 ## Configurações do Processador
 
 ### Configuração Fixa
-- Δ parâmetro 1: 
+-  parâmetro 1: 
   - Original:
   - Modificado para:
 - Δ parâmetro 2: 
@@ -15,17 +15,17 @@ Simulação de processador x86 com características variadas em diferentes tipos
   - Original:
   - Modificado para:
 
-#### Parâmetro 1
+#### Δ Parâmetro 1
 - Config 1:
 - Config 2:
 - Config 3:
 
-#### Parâmetro 2
+#### Δ Parâmetro 2
 - Config 1:
 - Config 2:
 - Config 3:
 
-#### Parâmetro 3
+#### Δ Parâmetro 3
 - Config 1:
 - Config 2:
 - Config 3:
