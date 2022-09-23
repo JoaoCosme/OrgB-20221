@@ -46,12 +46,14 @@ int main(int argc, char *argv[])
     int iterations = 100;
     if(argc > 1)
     {
-        csv_name = argv[1];
+        csv_name = "../Data/";
+        csv_name.append(argv[1]);
         csv_name.append(".csv");
         if(argc > 2)
             iterations = atoi(argv[2]);
 
-       cout << iterations + "iterations written into " + csv_name << endl; 
+        cout << csv_name<< endl;
+        cout << iterations << endl;
     }
 
     std::chrono::_V2::system_clock::time_point start;
