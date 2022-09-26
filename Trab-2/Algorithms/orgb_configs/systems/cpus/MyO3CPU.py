@@ -51,7 +51,7 @@ from m5.objects import SystemXBar
 
 class MyIntALU(FUDesc):
     opList = [ OpDesc(opClass='IntAlu') ]
-    count = 2
+    count = 8
 
 class MyIntMultDiv(FUDesc):
     opList = [ OpDesc(opClass='IntMult', opLat=3, pipelined=True),
