@@ -13,10 +13,10 @@ Simulação de processador x86 com características variadas em diferentes tipos
 [1kB (base), 2kB, 4kB, 8kB]
 
 #### Δ Parâmetro 2 - MyIntALU.count
-[2, 4, 8 (base), 16, 32]
+[2, 4, 8 (base), 16]
 
 #### Δ Parâmetro 3 - numPhysFloatRegs
-[32, 64, 96 (base), 128]
+[64, 96 (base), 128, 256]
 
 ---
 ## Algoritmos Escolhidos
@@ -48,6 +48,26 @@ Simulação de processador x86 com características variadas em diferentes tipos
 - *Resultados Esperados*:
   - Baixo 'miss-rate' devido a alta localidade;
   - Pouco impacto referente ao aumento associativo.
+
+
+---
+## Setup
+```bash
+git clone https://github.com/JoaoCosme/OrgB-20221.git
+cd gem5
+```
+## Rodando os benchmarks
+```bash
+./gem5 orgb_configs/simulate.py run-benchmark -c /home/orgb/OrgB-20221/Trab-2/Algorithms/fft.out
+```
+```bash
+./gem5 orgb_configs/simulate.py run-benchmark -c /home/orgb/OrgB-20221/Trab-2/Algorithms/sort.out
+```
+```bash
+./gem5 orgb_configs/simulate.py run-benchmark -c /home/orgb/OrgB-20221/Trab-2/Algorithms/matrix.out
+```
+
+No diretório '/home/orgb/gem5/m5out' ver os valores de 'sim_seconds' (tempo) e 'System.cpu.ipc' (IPC) no arquivo de resultados gerados 'stats.txt'.
 
 
 ---
