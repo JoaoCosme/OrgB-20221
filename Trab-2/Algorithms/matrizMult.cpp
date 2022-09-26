@@ -16,21 +16,7 @@ void matrixMulti(int a[][N], int b[][N], int *res)
 }
 
 int main(int argc, char *argv[])
-{
-    std::string csv_name = "something.csv";
-    int iterations = 100;
-    if(argc > 1)
-    {
-        csv_name = "../Data/";
-        csv_name.append(argv[1]);
-        csv_name.append(".csv");
-        if(argc > 2)
-            iterations = atoi(argv[2]);
-
-        cout << csv_name<< endl;
-        cout << iterations << endl;
-    }
-    
+{    
     
     int mat1[N][N] = {{0, 9794, 6087, 182, 423, 6807, 8529, 8767, 5404, 1628, 5877, 4111, 9591, 1277, 3624, 9568, 4439, 9144, 1712, 9871, 196, 9313, 6504, 520, 4341, 4998, 2055, 1892, 3058, 9672, 6333, 9418, 9466, 8771,9599, 6240, 5578, 8128, 5006, 981, 6107, 7234, 1444, 5697, 8510},
 
@@ -214,25 +200,9 @@ int main(int argc, char *argv[])
 
     int res[N][N];
 
-    std::chrono::_V2::system_clock::time_point start;
-    std::chrono::_V2::system_clock::time_point end;
-    std::chrono::duration<float> duration;
+    
+    matrixMulti(mat1, mat2, &res[0][0]);
 
-    std::ofstream csv;
-    csv.open(csv_name);
-    csv << "iteration,time(ms)\n";
-    for(int i = 0; i < iterations; i++){
-        start = std::chrono::high_resolution_clock::now();
 
-        matrixMulti(mat1, mat2, &res[0][0]);
-
-        end = std::chrono::high_resolution_clock::now();
-        
-        duration = end - start;
-        float ms = duration.count() * 1000.0f;
-        csv << to_string(i+1) + "," + to_string(ms) + "\n";
-    }
-
-    csv.close();
     return 0;
 }

@@ -5,32 +5,19 @@ Simulação de processador x86 com características variadas em diferentes tipos
 ## Configurações do Processador
 
 ### Configuração Fixa
--  parâmetro 1: 
-  - Original:
-  - Modificado para:
-- Δ parâmetro 2: 
-  - Original:
-  - Modificado para:
-- Δ parâmetro 3: 
-  - Original:
-  - Modificado para:
+- Parâmetro 1: Cache L1 size (1kB)
+- Parâmetro 2: Cache L1 Associatividade (1)
+- Parâmetro 3: MyIntALU.count (8)
+  
+#### Δ Parâmetro 1 - L1 size
+[1kB (base), 2kB, 4kB, 8kB]
 
-#### Δ Parâmetro 1
-- Config 1:
-- Config 2:
-- Config 3:
+#### Δ Parâmetro 2 - MyIntALU.count
+[2, 4, 8 (base), 16, 32]
 
-#### Δ Parâmetro 2
-- Config 1:
-- Config 2:
-- Config 3:
+#### Δ Parâmetro 3 - numPhysFloatRegs
+[32, 64, 96 (base), 128]
 
-#### Δ Parâmetro 3
-- Config 1:
-- Config 2:
-- Config 3:
-
-### 
 ---
 ## Algoritmos Escolhidos
 

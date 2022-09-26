@@ -11,8 +11,8 @@ from m5.objects import Cache
 
 class BasicL1ICache(Cache):
 
-    size = '32kB'
-    assoc = 8
+    size = '1kB'
+    assoc = 1
     tag_latency = 1
     data_latency = 1
     response_latency = 1
