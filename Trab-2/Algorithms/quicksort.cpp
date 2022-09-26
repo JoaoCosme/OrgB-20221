@@ -69,7 +69,5 @@ int main(int argc, char *argv[])
 
     quickSort(v, 0, TAM -1);
 
-
-    // csv.close();
     return 0;
 }

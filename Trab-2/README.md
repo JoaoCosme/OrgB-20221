@@ -36,8 +36,8 @@ Simulação de processador x86 com características variadas em diferentes tipos
 
 ### Alg1: Multiplicação de Matrizes
 - *Características:*
-  - Operações aritméticas paralisadas (?);
-  - Acesso a grande quantidade sucessiva de memória;
+  - Operações aritméticas paralelizaveis;
+  - Acesso a grande quantidade de memória;
   - Alta localidade espacial.
 - *Resultados Esperados*:
   - Baixo 'miss-rate';
